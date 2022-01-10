@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>SkyTetris</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/img/tetrisIcono.png" type="image/png"> </head>
+
+<body onload="initialize();">
+    <div id="theHead" class="title">Sky Tetris</div>
+    <div id="newGame" onclick="correJuego();" onmouseover="this.style.backgroundColor='#CF23F1'" onmouseout="this.style.backgroundColor= 'rebeccapurple'">Nuevo Juego</div>
+    <div id="creditBtn" onmouseover="this.style.backgroundColor = '#CF23F1'" onmouseout="this.style.backgroundColor = 'rebeccapurple'" onclick="muestraCreditos();">Creditos</div>
+    <div id="credits">TetraCity: Hecho por Luis Garcia</div>
+    <div id="backBtn" onmouseover="this.style.backgroundColor='#CF23F1' " onmouseout=" this.style.backgroundColor='rebeccapurple' " onclick="irAtras(); ">Atras</div>
+    <div id="main">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="js/script.js "></script>
+    <script src="js/background.js"></script>
+    <script src="js/juego.js "></script>
+</body>
+
+</html>
